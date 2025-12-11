@@ -1,0 +1,9 @@
+module Fibonacci.Out
+
+open Fibonacci
+
+let out = print_int (fib 6)
+
+(* Partial opens not supported *)
+
+let out = print_int (Fibonacci.Tail.fib 6)
