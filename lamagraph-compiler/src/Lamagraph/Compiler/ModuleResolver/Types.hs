@@ -22,9 +22,9 @@ import Data.HashSet ()
 
 import Lamagraph.Compiler.Syntax.Longident
 
-newtype ModulePath = ModulePath Longident deriving (Eq, Show, Hashable)
+newtype ModulePath = ModulePath Longident deriving (Show, Eq, Hashable)
 
-newtype FullName = FullName Longident deriving (Eq, Show, Hashable)
+newtype FullName = FullName Longident
 
 newtype ModuleRegistry
   = ModuleRegistry
